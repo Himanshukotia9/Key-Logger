@@ -6,8 +6,19 @@
     <title>Key-Logger</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    
+<body class="bg-orange-50">
+    <div class="flex flex-col items-center gap-10">
+        <h1 class="mt-24 p-4 font-bold font-serif text-6xl rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-slate-100">Key-Logger</h1>
+        <p id="log" class="text-xl flex-wrap">Best way to log your keys is through key Logger</p>
+        <div class="flex gap-8">
+            <button id="start-log" class="p-3 border-2 border-black rounded-3xl font-bold">Start Logging Keypresses</button>
+            <button id="stop-log" class="p-3 border-2 border-black rounded-3xl font-bold">Stop Logging Keypresses</button>
+        </div>
+        <div class="flex gap-8 my-5">
+            <div id="log" class="w-80 h-12 bg bg-amber-400 rounded-3xl"></div>
+            <div id="state" class="w-80 h-12 bg bg-yellow-600 rounded-3xl"></div>
+        </div>
+    </div>
 
 
 
