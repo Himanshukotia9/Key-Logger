@@ -4,15 +4,15 @@ const startBtn = document.getElementById("start-log");
 const stopBtn = document.getElementById("stop-log");
 
 startBtn.addEventListener("click",() => {
-    document.addEventListener("keydown", handleDown)
-    document.addEventListener("keyup", handleUp)
+    document.addEventListener("keydown",handleDown)
+    document.addEventListener("keyup",handleUp)
     startBtn.disabled = true;
     stopBtn.disabled = false;
 })
 
 stopBtn.addEventListener("click",() => {
-    document.removeEventListener("keydown", handleDown)
-    document.removeEventListener("keyup", handleUp)
+    document.removeEventListener("keydown",handleDown)
+    document.removeEventListener("keyup",handleUp)
     logDiv.textContent = "";
     stateDiv.textContent = "";
     startBtn.disabled = false;
